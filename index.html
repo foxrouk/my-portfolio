@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
-  <title>Omar – Email Copywriter</title>
+  <title>Omar – Email Copywriter</title> 
 
   <style>
     body {
@@ -15,21 +15,44 @@
       font-family: 'Courier New', Courier, monospace;
     }
   </style> 
-  
+
 </head>
 <body>
  <section class="hero-section">
   <div class="overlay">
     <div class="form-container">
       <h1>Let's Connect</h1>
-      <form>
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <button type="submit">Send</button>
-      </form>
-    </div>
-    <img src="images/connect-form.jpg" alt="Contact Background" class="hero-image">
-  </div>
+    <!-- Contact Form - Dark Theme - Formspree -->
+<form action="https://formspree.io/f/xblkporj" method="POST" style="max-width: 400px; margin: 0 auto; display: flex; flex-direction: column; gap: 1rem;">
+  <input 
+    type="email" 
+    name="email" 
+    placeholder="Your Email" 
+    required 
+    style="background-color: #0d1117; border: 1px solid #30363d; color: #c9d1d9; padding: 0.75rem; border-radius: 8px; font-family: inherit;"
+  >
+  
+  <textarea 
+    name="message" 
+    placeholder="Your Message" 
+    required 
+    style="background-color: #0d1117; border: 1px solid #30363d; color: #c9d1d9; padding: 0.75rem; border-radius: 8px; font-family: inherit; min-height: 120px;"
+  ></textarea>
+  
+  <button 
+    type="submit" 
+    style="background-color: #238636; color: white; border: none; padding: 0.75rem; border-radius: 8px; cursor: pointer; transition: background 0.3s ease;"
+    onmouseover="this.style.backgroundColor='#2ea043'"
+    onmouseout="this.style.backgroundColor='#238636'"
+  >
+    Send Message
+  </button>
+</form>
+
+   
+       </div>
+     <img src="images/connect-form.jpg" alt="Contact Background" class="hero-image">
+   </div>
 </section>
 
   <h1>Hello, I'm Omar</h1>
@@ -98,4 +121,5 @@
 
 <footer>
   <p>© 2025 Omar Farouk. All rights reserved.</p>
+  
   
